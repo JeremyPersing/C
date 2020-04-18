@@ -1,0 +1,25 @@
+Script started on Fri 14 Feb 2020 08:20:39 PM PST
+[persingj@sp3:21]> gcc lab3.c
+[persingj@sp3:22]> a.out
+
+Jeremy Persing. Lab 3.
+
+Joe went to the store.
+
+My friend is 20 years old.
+
+"Sometimes you will never know the value of a moment unitl it becomes a memory."
+ - Dr. Suess
+
+The average = 246.2
+
+The average = 246.237
+
+The average = 2.46e+02
+
+The average = 246.236890
+
+[persingj@sp3:23]> exit
+exit
+
+Script done on Fri 14 Feb 2020 08:20:51 PM PST

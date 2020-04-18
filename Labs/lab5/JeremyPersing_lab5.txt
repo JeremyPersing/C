@@ -1,0 +1,29 @@
+Script started on Wed 04 Mar 2020 04:54:00 PM PST
+[persingj@sp3:21]> touch lab5.h
+[persingj@sp3:22]> make
+gcc -c lab5.c
+gcc -c get_range_count.c
+gcc lab5.o get_range_count.o -o range
+[persingj@sp3:23]> range
+
+
+Jeremy Persing.  Lab 5. 
+
+
+File lab5a.dat:  
+There are 14 values in the range of 90 through 99
+out of a total of 29 values.
+
+
+
+Jeremy Persing.  Lab 5. 
+
+
+File lab5b.dat:  
+There are 11 values in the range of 90 through 99
+out of a total of 29 values.
+
+[persingj@sp3:24]> exit
+exit
+
+Script done on Wed 04 Mar 2020 04:54:24 PM PST

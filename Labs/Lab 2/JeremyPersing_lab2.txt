@@ -1,0 +1,189 @@
+Script started on Sat 08 Feb 2020 05:08:16 PM PST
+[persingj@sp3:3]> history -c
+[persingj@sp3:4]> cd csc60
+~/csc60 
+[persingj@sp3:5]> mkdir cs[K[Klab2
+[persingj@sp3:6]> cd lab2
+[persingj@sp3:7]> pwd
+/gaia/class/student/persingj/csc60/lab2
+[persingj@sp3:8]> mkdir aa a
+[persingj@sp3:9]> cd aaa
+[persingj@sp3:10]> pwd
+/gaia/class/student/persingj/csc60/lab2/aaa
+[persingj@sp3:11]> cd ..
+[persingj@sp3:12]> pwd
+/gaia/class/student/persingj/csc60/lab2
+[persingj@sp3:13]> ls > file1
+[persingj@sp3:14]> cat file1
+aaa/
+file1
+[persingj@sp3:15]> less file1
+[?1049h[?1h=aaa/
+file1
+[7mfile1 (END)[27m[K[K[?1l>[?1049l[persingj@sp3:16]> file *
+aaa:   setgid directory
+file1: ASCII text
+[persingj@sp3:17]> wc file1
+ 2  2 11 file1
+[persingj@sp3:18]> wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      11 file1
+      2       2      11 total
+[persingj@sp3:19]> grep lab file1
+[persingj@sp3:20]> cp file1 file2
+[persingj@sp3:21]> ls
+aaa/  file1  file2
+[persingj@sp3:22]> cd aaa
+[persingj@sp3:23]> cp ../file1 .
+[persingj@sp3:24]> ls
+file1
+[persingj@sp3:25]> mv file1 file2
+[persingj@sp3:26]> ls
+file2
+[persingj@sp3:27]> mv ../file2 [K1 .
+[persingj@sp3:28]> cd ..
+[persingj@sp3:29]> ls
+aaa/  file2
+[persingj@sp3:30]> cd aaa
+[persingj@sp3:31]> ls
+file1  file2
+[persingj@sp3:32]> cmp file1 file2
+[persingj@sp3:33]> ls > aaalist
+[persingj@sp3:34]> cmp file1 aaalist
+file1 aaalist differ: byte 4, line 1
+[persingj@sp3:35]> diff file1 aaalist
+1c1
+< aaa/
+---
+> aaalist
+2a3
+> file2
+[persingj@sp3:36]> rm file1
+[persingj@sp3:37]> ls
+aaalist  file2
+[persingj@sp3:38]> ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+persingj 22028  0.0  0.0 123788  2156 pts/0    Ss   16:50   0:00 -csh
+persingj 22947  0.0  0.0 114196   812 pts/0    S+   17:08   0:00 script JeremyPersing_lab2.txt
+persingj 22949  0.0  0.0 114204   384 pts/0    S+   17:08   0:00 script JeremyPersing_lab2.txt
+persingj 22950  0.0  0.0 123808  2144 pts/1    Ss   17:08   0:00 -sh -i
+persingj 23147  0.0  0.0 159620  1996 pts/1    R+   17:13   0:00 ps u
+[persingj@sp3:39]> ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  5626 22950 22949  0  80   0 - 30952 sigsus pts/1    00:00:00 csh
+0 R  5626 23151 22950  0  80   0 - 38312 -      pts/1    00:00:00 ps
+[persingj@sp3:40]> !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  5626 22950 22949  0  80   0 - 30952 sigsus pts/1    00:00:00 csh
+0 R  5626 23153 22950  0  80   0 - 38312 -      pts/1    00:00:00 ps
+[persingj@sp3:41]> history
+     4	17:08	cd csc60
+     5	17:08	mkdir lab2
+     6	17:08	cd lab2
+     8	17:08	mkdir aaa
+    12	17:09	pwd
+    13	17:09	ls > file1
+    14	17:09	cat file1
+    15	17:09	less file1
+    16	17:09	file *
+    17	17:10	wc file1
+    18	17:10	wc *
+    19	17:10	grep lab file1
+    20	17:10	cp file1 file2
+    23	17:11	cp ../file1 .
+    25	17:11	mv file1 file2
+    27	17:12	mv ../file1 .
+    28	17:12	cd ..
+    30	17:12	cd aaa
+    32	17:12	cmp file1 file2
+    33	17:13	ls > aaalist
+    34	17:13	cmp file1 aaalist
+    35	17:13	diff file1 aaalist
+    36	17:13	rm file1
+    37	17:13	ls
+    38	17:13	ps u
+    40	17:14	ps -l
+    41	17:14	history
+[persingj@sp3:42]> cd../cc[K[K..
+cd../..: Command not found.
+[persingj@sp3:43]> cd ../..
+[persingj@sp3:44]> pwd
+/gaia/class/student/persingj/csc60
+[persingj@sp3:45]> cd lab1
+[persingj@sp3:46]> head lab1.c
+/*--------------*/
+/*Jeremy Persing*/
+/*Lab 1         */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+[persingj@sp3:47]> q
+q: Command not found.
+[persingj@sp3:48]> tail lab1.c
+int main(void)
+{
+    printf("\nLab 1.\n\n");
+    printf("Hello World.\n");
+    printf("Hi, Jeremy Persing.\n");
+    printf("\nThe harder the conflict, the greater the triumph.\n- George Washington\n\n");
+   
+    return EXIT_SUCCESS;
+}
+/*--------------*/
+[persingj@sp3:49]> q
+q: Command not found.
+[persingj@sp3:50]> ls -al | less
+[?1049h[?1h=total 32
+drwx--S--- 2 persingj stdcsc 4096 Jan 30 10:37 ./
+drwx--S--- 4 persingj stdcsc 4096 Feb  8 17:08 ../
+-rwx------ 1 persingj stdcsc 4794 Jan 30 10:37 a.out*
+-rw------- 1 persingj stdcsc  321 Jan 30 10:37 JeremyPersing_lab1.txt
+-rw------- 1 persingj stdcsc  353 Jan 30 10:37 lab1.c
+-rw------- 1 persingj stdcsc  310 Jan 29 22:19 persingj_lab1.txt
+-rw------- 1 persingj stdcsc   62 Jan 29 21:56 .vimrc
+[7m(END)[27m[K[K[?1l>[?1049l[persingj@sp3:51]> historu[Ky
+     4	17:08	cd csc60
+     5	17:08	mkdir lab2
+     6	17:08	cd lab2
+     8	17:08	mkdir aaa
+    13	17:09	ls > file1
+    14	17:09	cat file1
+    15	17:09	less file1
+    16	17:09	file *
+    17	17:10	wc file1
+    18	17:10	wc *
+    19	17:10	grep lab file1
+    20	17:10	cp file1 file2
+    23	17:11	cp ../file1 .
+    25	17:11	mv file1 file2
+    27	17:12	mv ../file1 .
+    28	17:12	cd ..
+    30	17:12	cd aaa
+    32	17:12	cmp file1 file2
+    33	17:13	ls > aaalist
+    34	17:13	cmp file1 aaalist
+    35	17:13	diff file1 aaalist
+    36	17:13	rm file1
+    37	17:13	ls
+    38	17:13	ps u
+    40	17:14	ps -l
+    42	17:14	cd../..
+    43	17:14	cd ../..
+    44	17:14	pwd
+    45	17:15	cd lab1
+    46	17:15	head lab1.c
+    48	17:15	tail lab1.c
+    49	17:15	q
+    50	17:16	ls -al | less
+    51	17:16	history
+[persingj@sp3:52]> echo $SHELL
+/bin/csh
+[persingj@sp3:53]> ^Dexit
+
+Script done on Sat 08 Feb 2020 05:16:54 PM PST

@@ -1,0 +1,16 @@
+Script started on Thu 30 Jan 2020 10:37:37 AM PST
+[persingj@athena:21]> gcc lab1.c
+[persingj@athena:22]> a.out
+
+Lab 1.
+
+Hello World.
+Hi, Jeremy Persing.
+
+The harder the conflict, the greater the triumph.
+- George Washington
+
+[persingj@athena:23]> exit
+exit
+
+Script done on Thu 30 Jan 2020 10:37:55 AM PST
