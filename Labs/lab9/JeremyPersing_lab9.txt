@@ -1,0 +1,41 @@
+Script started on Thu 16 Apr 2020 09:42:08 AM PDT
+[persingj@sp3:21]> gcc lab9.c -Wall
+[persingj@sp3:22]> a.out
+csc60msh> 
+Argc = 0
+csc60msh>   
+Argc = 0
+csc60msh> pwd
+Argc = 1
+Argv 0 = pwd
+/gaia/class/student/persingj/csc60/lab9
+csc60msh> cd ..
+Argc = 2
+Argv 0 = cd
+Argv 1 = ..
+csc60msh> pwd
+Argc = 1
+Argv 0 = pwd
+/gaia/class/student/persingj/csc60
+csc60msh> cd lab9
+Argc = 2
+Argv 0 = cd
+Argv 1 = lab9
+csc60msh> pwd
+Argc = 1
+Argv 0 = pwd
+/gaia/class/student/persingj/csc60/lab9
+csc60msh> cd
+Argc = 1
+Argv 0 = cd
+csc60msh> pwd
+Argc = 1
+Argv 0 = pwd
+/gaia/class/student/persingj
+csc60msh> exit
+Argc = 1
+Argv 0 = exit
+[persingj@sp3:23]> exit
+exit
+
+Script done on Thu 16 Apr 2020 09:43:24 AM PDT
